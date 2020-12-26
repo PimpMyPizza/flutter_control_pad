@@ -43,7 +43,7 @@ class CircleView extends StatelessWidget {
             color: color,
           ),
         ));
-    return Container(
+    /*return Container(
       width: size,
       height: size,
       child: Center(
@@ -59,7 +59,7 @@ class CircleView extends StatelessWidget {
         border: border,
         boxShadow: boxShadow,
       ),
-    );
+    );*/
   }
 
   factory CircleView.joystickCircle(double size, Color color) => CircleView(
