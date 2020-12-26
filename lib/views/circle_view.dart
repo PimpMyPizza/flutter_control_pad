@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:clippy_flutter/bevel.dart';
 
 class CircleView extends StatelessWidget {
   final double size;
@@ -31,6 +32,17 @@ class CircleView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double cutlength = size * 0.25;
+    return Container(
+        padding: EdgeInsets.all(3),
+        child: Bevel(
+          cutLength: cutlength,
+          child: Container(
+            width: size,
+            height: size,
+            color: color,
+          ),
+        ));
     return Container(
       width: size,
       height: size,

@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  clippy_flutter: ^1.1.1 # trapezoids and other forms
 
 dev_dependencies:
   pedantic: ^1.0.0
